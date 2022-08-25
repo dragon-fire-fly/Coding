@@ -5,7 +5,7 @@
 :root {
     --h1-font: "Berkshire Swash", sans-serif;
     --h2-font:"Lobster Two", sans-serif;
-    --nav-menu-font:"Lobster Two", sans-serif;
+    --nav-menu-font:"Arima", sans-serif;
     --link-font: "Lobster Two", sans-serif;
     --body-font: "Arima", sans-serif;
     
@@ -44,6 +44,29 @@ h2 {
     text-align: center;
     color: rgba(var(--black),1);
     padding: 20px;
+}
+
+/* Nav menu */
+nav {
+    background-color: rgba(var(--nav-bar-color),1);
+    text-align: center;
+    padding: 15px;
+}
+
+.nav-menu a {
+    font-family: var(--nav-menu-font);
+    color: rgba(var(--black),1);
+    font-size: 160%;
+    text-decoration: none;
+    padding: 0 2vw;
+}
+
+.nav-menu a:hover {
+    border-bottom: 2px solid rgba(var(--black),1);
+}
+
+.active {
+    border-bottom: 2px solid rgba(var(--black),1);
 }
 
 /* Index */
@@ -125,7 +148,7 @@ h2 {
 /* Footer styling */
 footer {
     height: auto;
-    width: 100%;
+    width: 100vw;
     color: rgba(var(--footer-color),1);
     margin: 0;
     background-color:rgba(var(--d-blue),1);
