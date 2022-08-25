@@ -1,0 +1,172 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@400&family=Berkshire+Swash&family=Diplomata+SC&family=Kosugi+Maru&family=Libre+Baskerville:ital@1&family=Lobster&family=Lobster+Two&family=Merienda&family=Montserrat:wght@300&family=Roboto+Mono&family=Satisfy&display=swap');
+
+:root {
+    --h1-font: "Berkshire Swash", sans-serif;
+    --h2-font:"Lobster Two", sans-serif;
+    --nav-menu-font:"Lobster Two", sans-serif;
+    --link-font: "Lobster Two", sans-serif;
+    --body-font: "Arima", sans-serif;
+    
+    --background-color: 221,231,199;
+    --nav-bar-color: 135,182,155;
+    --black: 0,0,0;
+    --white: 255,255,255;
+    --l-blue: 152,233,255;
+    --d-blue: 2,120,158;
+    --footer-color: 0,0,0;
+    --social-media:0,56,89;
+    --h1-color: 18,97,0;
+}
+
+body {
+    background-color: rgba(var(--background-color), 1)
+}
+
+h1 {
+    font-family: var(--h1-font);
+    font-weight: 300;
+    font-size: 300%;
+    color: rgba(var(--h1-color),1);
+    text-align: center;
+}
+
+header a {
+    text-decoration: none;
+}
+
+
+h2 {
+    font-family: var(--h2-font);
+    font-weight: 300;
+    font-size: 300%;
+    text-align: center;
+    color: rgba(var(--black),1);
+    padding: 20px;
+}
+
+/* Index */
+.central-div {
+    display: grid;
+    grid-template-rows: 1fr 50px 1fr;
+    grid-template-columns: repeat(7, 1fr);
+    height: 600px;
+    text-align: center;
+    background: url(../images/socks-on-line.jpg) no-repeat right bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.start {
+    grid-row-start: 2;
+    grid-column-start: 4;
+    padding: 5px;
+    font-size: 120%;
+    background-color:rgba(var(--d-blue),1);
+}
+
+/* Sock page */
+
+.image-container {
+    display: grid;
+    grid-template-columns: 50px repeat(1fr,3) 50px;
+    grid-template-rows: 50px 2fr 1fr 50px;
+}
+
+.sock-image {
+    grid-area:2/2/span 1/span 1;
+    height: auto;
+    width: auto;
+}
+
+.sock {
+    grid-area:2/2/span 1/span 1;
+    max-height: 600px;
+    width: auto;
+    justify-content: center;
+}
+
+.page-link {
+    text-decoration: none;
+    color: black;
+}
+
+/* Github Page */
+.github-profiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.github-name {
+    grid-column: 2,span 1;
+    font-size: 150%;
+}
+
+.fa-github {
+    font-size: 150%;
+}
+
+#peer {
+    color: blue;
+}
+
+#michel {
+    color: red;
+}
+
+#emily {
+    color: green;
+}
+
+
+
+/* Footer styling */
+footer {
+    height: auto;
+    width: 100%;
+    color: rgba(var(--footer-color),1);
+    margin: 0;
+    background-color:rgba(var(--d-blue),1);
+}
+
+.social-networks {
+    grid-area:2/1/span 2/span 2;
+    font-family: var(--body-font);
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    background-color: rgba(var(--l-blue), 0.5)
+}
+
+.social-networks p {
+    font-size: 150%;
+    font-weight: 600;
+    padding: 30px;
+}
+
+.social-networks li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    padding: 0;
+    font-size: 200%;
+    color: rgba(var(--black),1);
+}
+
+.back-to-top {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.back-to-top a {
+    color: rgba(var(--black),1);
+    text-decoration: none;
+    text-align: center;
+    font-size: 120%;
+}
